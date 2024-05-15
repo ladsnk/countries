@@ -1,0 +1,54 @@
+.selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-width: 183px;
+
+  font-size: 0.95rem;
+  color: var(--text);
+  padding: 1rem 0.7rem 1rem 1.3rem;
+  background-color: var(--elements);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0.3rem;
+  user-select: none;
+  cursor: pointer;
+}
+
+.selector svg {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.selector__list {
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  top: 3.7rem;
+  left: 0;
+  padding: 0.5rem;
+
+  background-color: var(--elements);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0.3rem;
+}
+
+.selector__list li {
+  font-size: 0.85rem;
+  padding: 0.3rem 1rem;
+}
+
+.selector__list li p {
+  opacity: 1;
+}
+
+.selector__list li p:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 425px) {
+  .selector {
+    font-size: 0.9rem;
+  }
+}

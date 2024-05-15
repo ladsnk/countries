@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html[data-theme="dark"] {
+  --elements: hsl(209, 23%, 22%);
+  --bg: hsl(207, 26%, 17%);
+  --text: white;
+}
+html[data-theme="light"] {
+  --elements: white;
+  --bg: hsl(0, 0%, 98%);
+  --text: hsl(200, 15%, 8%);
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  background-color: var(--bg);
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+main {
+  width: 90%;
+
+  margin: 2rem auto;
+}
+.background {
+  position: fixed;
+  inset: 0;
+  cursor: default;
+  opacity: 0.2;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

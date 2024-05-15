@@ -1,0 +1,28 @@
+{
+  "name": "countries",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.24.1",
+    "@tanstack/react-query-devtools": "^5.24.1",
+    "axios": "^1.6.7",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "react-intersection-observer": "^9.8.1",
+    "react-query": "^3.39.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}
